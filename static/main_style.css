@@ -1,0 +1,54 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-template-columns: 200px 200px;
+}
+
+header {
+    background-color: coral;
+    color: coral;
+    height: 100px;
+}
+.wrapper button {
+    border-width: 0;
+}
+.wrapper div {
+    width: 300px;
+    background-color: coral;
+    margin: 5px;
+    height: auto;
+}
+
+#ufanet-title {
+    color:rgba(139, 0, 255);
+}
+
+.img-center {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: large;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.button_url {
+    border-width: 0;
+    width: 200px;
+    height: 20px;
+    background-color: rgba(139, 0, 255);
+}
+
+#sale_search {
+    width: 200px;
+    height: 30px;
+    font-size: medium;
+}
