@@ -11,6 +11,7 @@ class Category(models.Model):
     class Meta:
         verbose_name = "Категория"
         verbose_name_plural = "Категории"
+        ordering = ["id"]
 
 
 class Sale(models.Model):
@@ -32,3 +33,4 @@ class Sale(models.Model):
     class Meta:
         verbose_name = "Скидка"
         verbose_name_plural = "Скидки"
+        ordering = ["id"]
