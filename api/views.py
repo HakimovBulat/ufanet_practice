@@ -1,6 +1,6 @@
 from rest_framework import generics
 from billboard.models import Sale, Category
-from billboard.api.serializers import SaleSerializer, CategorySerializer
+from .serializers import SaleSerializer, CategorySerializer
 from django.views.decorators.cache import cache_page
 from django.utils.decorators import method_decorator
 
