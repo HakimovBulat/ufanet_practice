@@ -7,14 +7,44 @@
     grid-template-columns: 200px 200px;
 }
 
+#logout-btn {
+    border-width: 0;
+    width: 150px;
+    height: 20px;
+
+    font-size: 12pt;
+    background-color: red;
+}
+
+.wrapper-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-template-columns: 200px 200px;
+}
+
+.wrapper-form div {
+    width: 300px;
+    margin: 5px;
+    height: auto;
+}
+
 header {
+    width: 100%;
     background-color: coral;
     color: coral;
     height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
+
 .wrapper button {
     border-width: 0;
 }
+
 .wrapper div {
     width: 300px;
     background-color: coral;
@@ -51,4 +81,13 @@ body {
     width: 200px;
     height: 30px;
     font-size: medium;
+}
+
+.right-text {
+    float: right;
+    text-align: right;
+}
+
+.left-text {
+    float: left;
 }

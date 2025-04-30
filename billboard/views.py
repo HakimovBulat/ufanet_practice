@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from .models import Category, Sale
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def index(request):
     if request.method == "POST":
         sale_search = request.POST.get("sale_search", "").lower()
@@ -24,6 +26,7 @@ def index(request):
     return render(request, "billboard/index.html", context=context)
 
 
+@login_required
 def category_sales(request, pk):
     category = Category.objects.get(pk=pk)
 
@@ -34,6 +37,7 @@ def category_sales(request, pk):
     return render(request, "billboard/category_sales.html", context=context)
 
 
+@login_required
 def sale_info(request, sale_pk):
     context = {
         "sale": Sale.objects.get(pk=sale_pk)
