@@ -15,8 +15,8 @@ class Category(models.Model):
 
 
 class Sale(models.Model):
-    title = models.CharField("Заголовок", max_length=30)
-    subtitle = models.CharField("Подзаголовок", max_length=30, null=True, blank=True)
+    title = models.CharField("Заголовок", max_length=50)
+    subtitle = models.CharField("Подзаголовок", max_length=50, null=True, blank=True)
     description = models.TextField("Описание")
 
     photo = models.ImageField("Фото", upload_to ='static/media/', default="static/media/category-new_MROs2uS.png")
